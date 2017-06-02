@@ -1,0 +1,48 @@
+﻿<master version="4.5" minAllowVersion="4.5" ID="61A25D84-5B50-4FDF-BF97-103E7340BB66">
+  <controls>
+    <control controlID="7528F57C-3DA8-44A8-B88F-A76873FBA8AE" controlTypeID="Master" isShow="True" caption="Master" x="7" y="15" w="46" h="46" measuredW="0" measuredH="0" zOrder="4" locked="False" sizeLocked="False" masterID="61A25D84-5B50-4FDF-BF97-103E7340BB66">
+      <controlProperties>
+        <basic color="4294967295" borderVisible="True" borderColor="4284900966" isAutoSize="False" status="MsEnabled" opacity="1" isCommentCom="False" canMove="True" alias="" rotation="0"/>
+        <states/>
+        <verticalScrollbarShow>False</verticalScrollbarShow>
+        <verticalScrollbarProgress>0</verticalScrollbarProgress>
+        <horizontalScrollbarShow>False</horizontalScrollbarShow>
+        <horizontalScrollbarProgress>0</horizontalScrollbarProgress>
+        <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+          <link targetPageID="" linkType="ltPageLink" isApplyIncludePage="False" title="Link">
+            <area shape="0" alt="" ID="{BA545B55-ACA7-473C-8DFA-30556BA7F0F2}" coords="(0,0,46,46)"/>
+          </link>
+        </links>
+        <interactiveData>
+          <entry title="">
+            <area shape="0" alt="" ID="{B9E45345-9D9F-4C1E-B090-34201914EF70}" coords="(0,0,46,46)"/>
+            <events title=""/>
+          </entry>
+        </interactiveData>
+        <groupChildrenDescriptors>
+          <control controlID="36FFCA7C-5D13-45FA-AFCA-26CF0A5B4111" controlTypeID="Map" isShow="True" caption="Street+Map" x="-7" y="46" w="360" h="579" measuredW="200" measuredH="180" zOrder="0" locked="False" sizeLocked="False">
+            <controlProperties>
+              <basic color="4294967295" borderVisible="True" borderColor="4284900966" isAutoSize="False" status="MsEnabled" opacity="1" isCommentCom="False" canMove="True" alias="" rotation="0"/>
+              <states/>
+              <verticalScrollbarShow>False</verticalScrollbarShow>
+              <verticalScrollbarProgress>0</verticalScrollbarProgress>
+              <horizontalScrollbarShow>False</horizontalScrollbarShow>
+              <horizontalScrollbarProgress>0</horizontalScrollbarProgress>
+              <links eventType="AtClick" animate="AmNone" animateAutoDelay="0" animateDuration="500">
+                <link targetPageID="" linkType="ltPageLink" isApplyIncludePage="False" title="Link">
+                  <area shape="0" alt="" ID="{AAD52DA5-219C-4BAA-9E54-6313C761E255}" coords="(0,0,360,579)"/>
+                </link>
+              </links>
+              <interactiveData>
+                <entry title="">
+                  <area shape="0" alt="" ID="{5603D2F4-AC6C-48FA-9424-FD5D62B9E9D9}" coords="(0,0,360,579)"/>
+                  <events title=""/>
+                </entry>
+              </interactiveData>
+            </controlProperties>
+          </control>
+        </groupChildrenDescriptors>
+      </controlProperties>
+    </control>
+  </controls>
+</master>
