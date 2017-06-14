@@ -1,0 +1,176 @@
+﻿<project version="2.2" name="e-Food-App" ID="F6BBFF2F-8197-46EA-83B7-2672A4DBC13C">
+  <params>
+    <pageParam version="4.5" minAllowVersion="4.5"/>
+    <projectParam version="2.2" minAllowVersion="2.2" platform="MtMobile" orientation="MoPortrait" mobileScreenScale="1.77777779102325" mobileType="mmtAndroid" pageSize="(360,640)" backgroundColor="4294967295" fontSize="0" fontFamily=""/>
+    <previewParam version="1.0"/>
+    <colorParam version="1.0"/>
+  </params>
+  <modules>
+    <page name="Pantalla Inicio" ID="FDE809C8-A37E-44D3-8A81-792524322050" expanded="True" code="QpTcMQRZtp" thumbCode="QpTcMQRZtp" status="psWhite">
+      <images>
+        <image key="B9DB2582E7BD041D1ACDE19B2245F6A5.jpg"/>
+        <image key="5B6299825DF283F9BEF08A4E9DB0B25B.png"/>
+        <image key="D35BCED08880B0319D72F1E2F2DF9579.png"/>
+      </images>
+    </page>
+    <page name="Pantalla Registro" ID="FE6AE254-8512-48FE-B084-60A2E506D673" expanded="True" code="7qzQVaSsJS" thumbCode="7qzQVaSsJS" status="psWhite">
+      <images>
+        <image key="96A7A37508B3FBDAB8814977846E7B8A.png"/>
+        <image key="3A8F8A5C2C03CBF9E48B333147CFE9B4.png"/>
+      </images>
+    </page>
+    <page name="Pantalla Principal (Normal)" ID="57D4F8A3-7640-4EAD-A377-7BBB479876D2" expanded="True" code="o4SxqJbHhZ" thumbCode="o4SxqJbHhZ" isLastOpen="True" status="psWhite">
+      <images>
+        <image key="6CF5CA5A20318B035B00FD73FB88CDD4.png"/>
+        <image key="BDB49FD7747EC336C3BE5226CABB09A1.png"/>
+        <image key="22AC4731058751AE4E644444B4C89AF3.png"/>
+        <image key="96A7A37508B3FBDAB8814977846E7B8A.png"/>
+        <image key="8AC09FE59EBF29D7F1F3CAA6E8660747.png"/>
+        <image key="41CC0247976592B72FDADD2CB270CB7D.png"/>
+        <image key="6E850490DAEE322871E49C9EFCFE6587.png"/>
+        <image key="3653A1EF8E2F18A997AF35A5DF242876.png"/>
+        <image key="44E8F73BA3E9B098D03402BA5E1B6254.png"/>
+        <image key="2E3AF7D4DF92C343824636D37543AA18.png"/>
+        <image key="552B3E2D9206769553C7440A1D629C86.png"/>
+        <image key="95B5089B1348D7E020ACA05731DFCA5B.png"/>
+        <image key="F970C82D63677A99171D1DDE658B3897.png"/>
+      </images>
+    </page>
+    <page name="Pantalla Principal (Sugerencias)" ID="1CE07F64-CA15-4DB2-AC25-CCB7AA155690" expanded="True" code="3tXW7elpzq" thumbCode="3tXW7elpzq" status="psWhite">
+      <images>
+        <image key="6CF5CA5A20318B035B00FD73FB88CDD4.png"/>
+        <image key="BDB49FD7747EC336C3BE5226CABB09A1.png"/>
+        <image key="22AC4731058751AE4E644444B4C89AF3.png"/>
+        <image key="96A7A37508B3FBDAB8814977846E7B8A.png"/>
+        <image key="8AC09FE59EBF29D7F1F3CAA6E8660747.png"/>
+        <image key="41CC0247976592B72FDADD2CB270CB7D.png"/>
+        <image key="6E850490DAEE322871E49C9EFCFE6587.png"/>
+        <image key="3653A1EF8E2F18A997AF35A5DF242876.png"/>
+        <image key="44E8F73BA3E9B098D03402BA5E1B6254.png"/>
+        <image key="2E3AF7D4DF92C343824636D37543AA18.png"/>
+        <image key="552B3E2D9206769553C7440A1D629C86.png"/>
+        <image key="95B5089B1348D7E020ACA05731DFCA5B.png"/>
+        <image key="F970C82D63677A99171D1DDE658B3897.png"/>
+      </images>
+    </page>
+    <page name="Pantalla Principal (Tacos Selected)" ID="D089B172-96E2-442E-B7F0-A637E6A57A95" expanded="True" code="AwlYZzcoo8" thumbCode="AwlYZzcoo8" status="psWhite">
+      <images>
+        <image key="6CF5CA5A20318B035B00FD73FB88CDD4.png"/>
+        <image key="BDB49FD7747EC336C3BE5226CABB09A1.png"/>
+        <image key="22AC4731058751AE4E644444B4C89AF3.png"/>
+        <image key="96A7A37508B3FBDAB8814977846E7B8A.png"/>
+        <image key="8AC09FE59EBF29D7F1F3CAA6E8660747.png"/>
+        <image key="41CC0247976592B72FDADD2CB270CB7D.png"/>
+        <image key="6E850490DAEE322871E49C9EFCFE6587.png"/>
+        <image key="3653A1EF8E2F18A997AF35A5DF242876.png"/>
+        <image key="44E8F73BA3E9B098D03402BA5E1B6254.png"/>
+        <image key="2E3AF7D4DF92C343824636D37543AA18.png"/>
+        <image key="552B3E2D9206769553C7440A1D629C86.png"/>
+        <image key="95B5089B1348D7E020ACA05731DFCA5B.png"/>
+        <image key="F970C82D63677A99171D1DDE658B3897.png"/>
+      </images>
+    </page>
+    <page name="Pantalla Principal (Sandwich Selected)" ID="06F1C3A2-AE25-4EA3-ACC7-76C6790D3680" expanded="True" code="rvVclFGRlI" thumbCode="rvVclFGRlI" status="psWhite">
+      <images>
+        <image key="6CF5CA5A20318B035B00FD73FB88CDD4.png"/>
+        <image key="BDB49FD7747EC336C3BE5226CABB09A1.png"/>
+        <image key="22AC4731058751AE4E644444B4C89AF3.png"/>
+        <image key="96A7A37508B3FBDAB8814977846E7B8A.png"/>
+        <image key="8AC09FE59EBF29D7F1F3CAA6E8660747.png"/>
+        <image key="41CC0247976592B72FDADD2CB270CB7D.png"/>
+        <image key="6E850490DAEE322871E49C9EFCFE6587.png"/>
+        <image key="3653A1EF8E2F18A997AF35A5DF242876.png"/>
+        <image key="44E8F73BA3E9B098D03402BA5E1B6254.png"/>
+        <image key="2E3AF7D4DF92C343824636D37543AA18.png"/>
+        <image key="552B3E2D9206769553C7440A1D629C86.png"/>
+        <image key="95B5089B1348D7E020ACA05731DFCA5B.png"/>
+        <image key="F970C82D63677A99171D1DDE658B3897.png"/>
+      </images>
+    </page>
+    <page name="Pantalla Resultados (Sandwich)" ID="B1AF6B1A-AF2D-4A77-BD2E-D12E9B7CE0FA" expanded="True" code="3uEJV64xrl" thumbCode="3uEJV64xrl" status="psWhite">
+      <images>
+        <image key="0984C7749D49739054FD3C14568ADF1C.png"/>
+        <image key="E6846E633DC1587E343959CBA8946201.svg"/>
+        <image key="C487087161B7AFAC4353A4C6F54A65A1.svg"/>
+        <image key="0A74D3BB2B2B379A4F5F2817F159EA35.png"/>
+        <image key="D7C6F0F240B26D8ECB07CBCED3F2957E.png"/>
+        <image key="C1660C7CCD307222309296CA07068C7B.png"/>
+        <image key="D6859759E093AABA6D618DD6AA733504.svg"/>
+        <image key="CCEBD0C3F075BEC0440E231D47C514A4.png"/>
+        <image key="04632B17043647C7770C011B6E803358.png"/>
+        <image key="7368E932054EB35095B123FCB5C28A31.svg"/>
+      </images>
+    </page>
+    <page name="Pantalla Cheff ( Isaac)" ID="B8DF7FC0-2962-484E-8041-60462CFF75AD" expanded="True" code="KlSARjIxqj" thumbCode="KlSARjIxqj" status="psWhite">
+      <images>
+        <image key="C487087161B7AFAC4353A4C6F54A65A1.svg"/>
+        <image key="E6846E633DC1587E343959CBA8946201.svg"/>
+        <image key="2B40184E14062008F0BD354C295EB08D.png"/>
+        <image key="D1CECF01D939279EF4BDD3E6AB77AE18.png"/>
+        <image key="8A62493FF8321E3735E2C1A0828178A5.png"/>
+        <image key="D6859759E093AABA6D618DD6AA733504.svg"/>
+        <image key="EA3BEFCDA5159EF113A90C7A6191EF56.png"/>
+        <image key="7368E932054EB35095B123FCB5C28A31.svg"/>
+        <image key="5C76FEFAF113DBFEE73D821D0595C48F.png"/>
+      </images>
+    </page>
+    <page name="Pantalla Platillo (Sandwich de pollo)" ID="FF608099-C0FC-4948-AB78-D5DB354B8803" expanded="True" code="zBbKNFgvyl" thumbCode="zBbKNFgvyl" status="psWhite">
+      <images>
+        <image key="165086E92940830B2CC5E0F8AF9D4280.svg"/>
+        <image key="0F23C8B854F4385D15D076544F0123BD.svg"/>
+        <image key="D6859759E093AABA6D618DD6AA733504.svg"/>
+        <image key="694946DE94FEC0861604B83DE4C4A121.png"/>
+        <image key="2B3C179B5330DEB5610CCDFCCEE9A071.png"/>
+        <image key="245AACB34CA599E160D1CFEE0D28E4A2.png"/>
+        <image key="E85AFC5A7440B983E631D5E616C41660.png"/>
+        <image key="74B906CC1E9A95B913401D6A634CF700.png"/>
+      </images>
+    </page>
+  </modules>
+  <masters>
+    <master name="Master" ID="61A25D84-5B50-4FDF-BF97-103E7340BB66" status="psWhite" createDate="2017-06-01 14:03:51">
+      <refPages/>
+    </master>
+  </masters>
+  <images>
+    <image key="165086E92940830B2CC5E0F8AF9D4280.svg"/>
+    <image key="C487087161B7AFAC4353A4C6F54A65A1.svg"/>
+    <image key="C1660C7CCD307222309296CA07068C7B.png"/>
+    <image key="0F23C8B854F4385D15D076544F0123BD.svg"/>
+    <image key="8A62493FF8321E3735E2C1A0828178A5.png"/>
+    <image key="B9DB2582E7BD041D1ACDE19B2245F6A5.jpg"/>
+    <image key="5B6299825DF283F9BEF08A4E9DB0B25B.png"/>
+    <image key="04632B17043647C7770C011B6E803358.png"/>
+    <image key="8AC09FE59EBF29D7F1F3CAA6E8660747.png"/>
+    <image key="E85AFC5A7440B983E631D5E616C41660.png"/>
+    <image key="6E850490DAEE322871E49C9EFCFE6587.png"/>
+    <image key="44E8F73BA3E9B098D03402BA5E1B6254.png"/>
+    <image key="552B3E2D9206769553C7440A1D629C86.png"/>
+    <image key="245AACB34CA599E160D1CFEE0D28E4A2.png"/>
+    <image key="694946DE94FEC0861604B83DE4C4A121.png"/>
+    <image key="95B5089B1348D7E020ACA05731DFCA5B.png"/>
+    <image key="2B3C179B5330DEB5610CCDFCCEE9A071.png"/>
+    <image key="EA3BEFCDA5159EF113A90C7A6191EF56.png"/>
+    <image key="D35BCED08880B0319D72F1E2F2DF9579.png"/>
+    <image key="2B40184E14062008F0BD354C295EB08D.png"/>
+    <image key="0A74D3BB2B2B379A4F5F2817F159EA35.png"/>
+    <image key="6CF5CA5A20318B035B00FD73FB88CDD4.png"/>
+    <image key="D7C6F0F240B26D8ECB07CBCED3F2957E.png"/>
+    <image key="BDB49FD7747EC336C3BE5226CABB09A1.png"/>
+    <image key="22AC4731058751AE4E644444B4C89AF3.png"/>
+    <image key="96A7A37508B3FBDAB8814977846E7B8A.png"/>
+    <image key="CCEBD0C3F075BEC0440E231D47C514A4.png"/>
+    <image key="41CC0247976592B72FDADD2CB270CB7D.png"/>
+    <image key="5C76FEFAF113DBFEE73D821D0595C48F.png"/>
+    <image key="0984C7749D49739054FD3C14568ADF1C.png"/>
+    <image key="E6846E633DC1587E343959CBA8946201.svg"/>
+    <image key="3653A1EF8E2F18A997AF35A5DF242876.png"/>
+    <image key="D1CECF01D939279EF4BDD3E6AB77AE18.png"/>
+    <image key="2E3AF7D4DF92C343824636D37543AA18.png"/>
+    <image key="3A8F8A5C2C03CBF9E48B333147CFE9B4.png"/>
+    <image key="D6859759E093AABA6D618DD6AA733504.svg"/>
+    <image key="7368E932054EB35095B123FCB5C28A31.svg"/>
+    <image key="F970C82D63677A99171D1DDE658B3897.png"/>
+    <image key="74B906CC1E9A95B913401D6A634CF700.png"/>
+  </images>
+</project>
