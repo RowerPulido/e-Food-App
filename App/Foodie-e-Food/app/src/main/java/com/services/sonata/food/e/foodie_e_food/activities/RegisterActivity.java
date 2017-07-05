@@ -1,7 +1,9 @@
-package com.services.sonata.food.e.foodie_e_food;
+package com.services.sonata.food.e.foodie_e_food.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.services.sonata.food.e.foodie_e_food.R;
 
 public class RegisterActivity extends AppCompatActivity {
 
