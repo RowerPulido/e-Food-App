@@ -7,20 +7,13 @@
     android:orientation="vertical"
     tools:context="com.services.sonata.food.e.foodie_e_food.activities.LoginActivity">
 
-    <LinearLayout
+    <ImageView
+        android:id="@+id/imv_logo_efood"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_margin="20dp"
-        android:padding="16dp">
+        android:layout_margin="30dp"
+        android:background="@drawable/efood_final" />
 
-        <ImageView
-            android:id="@+id/imv_logo_efood"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/efood_final"
-            android:padding="10dp" />
-
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="   Correo electronico"
+            android:text="Correo electronico"
             android:textAlignment="textStart"
             android:textColor="#666666"
             android:textSize="12sp" />
@@ -53,8 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_weight="1"
-            android:text="   Contraseña"
+            android:text="Contrasena"
             android:textAlignment="textStart"
             android:textColor="#666666"
             android:textSize="12sp" />
@@ -63,9 +55,8 @@
             android:id="@+id/edi_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
             android:ems="10"
             android:inputType="textPassword" />
 
@@ -81,24 +72,17 @@
             android:textColor="@android:color/white"
             android:textSize="10sp" />
 
-        <Button
+        <com.facebook.login.widget.LoginButton
             android:id="@+id/btn_login_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
 
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:background="#3b5998"
-            android:text="Log in with facebook"
-            android:textColor="@android:color/white"
-            android:textSize="10sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
+            android:layout_marginTop="50dp"
             android:text="No tienes cuenta?"
             android:textAlignment="center"
             android:textColor="#666666"
@@ -109,10 +93,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
             android:backgroundTint="#F47A14"
-            android:text="Registrar"
+            android:text="Registrarme"
             android:textColor="@android:color/white"
             android:textSize="10sp" />
 
@@ -129,5 +111,4 @@
             android:textStyle="italic" />
 
     </LinearLayout>
-
 </LinearLayout>
