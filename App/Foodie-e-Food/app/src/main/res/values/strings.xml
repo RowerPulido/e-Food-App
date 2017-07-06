@@ -5,7 +5,10 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <!-- Para Facebook!-->
     <string name="facebook_app_id">396700844029541</string>
+    <string name="fb_login_protocol_scheme">fb396700844029541</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
