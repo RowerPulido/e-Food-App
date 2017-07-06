@@ -11,7 +11,7 @@
         android:allowBackup="true"
         android:icon="@drawable/efoodwhite"
         android:label="e-Food"
-        android:roundIcon="@drawable/efood-white"
+        android:roundIcon="@drawable/efood_white"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
