@@ -7,20 +7,13 @@
     android:orientation="vertical"
     tools:context="com.services.sonata.food.e.foodie_e_food.activities.LoginActivity">
 
-    <LinearLayout
+    <ImageView
+        android:id="@+id/imv_logo_efood"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_margin="20dp"
-        android:padding="16dp">
+        android:layout_margin="30dp"
+        android:background="@drawable/efood_final" />
 
-        <ImageView
-            android:id="@+id/imv_logo_efood"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/efood_final"
-            android:padding="10dp" />
-
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -86,12 +79,12 @@
             android:layout_gravity="center" />
 
         <TextView
-            android:layout_marginTop="50dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
             android:text="No tienes cuenta?"
             android:textAlignment="center"
-            android:layout_gravity="center"
             android:textColor="#666666"
             android:textSize="10sp" />
 
@@ -118,5 +111,4 @@
             android:textStyle="italic" />
 
     </LinearLayout>
-
 </LinearLayout>
