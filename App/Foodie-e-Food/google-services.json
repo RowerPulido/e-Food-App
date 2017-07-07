@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "980920776282",
+    "firebase_url": "https://efood-a17d9.firebaseio.com",
+    "project_id": "efood-a17d9",
+    "storage_bucket": "efood-a17d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980920776282:android:bd52e919c0958451",
+        "android_client_info": {
+          "package_name": "com.services.sonata.food.e.foodie_e_food"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980920776282-lcq2niilt1bo6v4lgq0dqio3sv1mmvdb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi-mh_HRu0vAgiLNGz-ErILslhvdQ2wRY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
