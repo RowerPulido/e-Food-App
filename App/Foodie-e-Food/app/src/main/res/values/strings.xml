@@ -7,7 +7,9 @@
     <string name="action_settings">Settings</string>
 
     <!-- Para Facebook!-->
-    <string name="facebook_app_id">286210088520224</string>
+    <!--<string name="facebook_app_id">286210088520224</string>-->
+    <string name="facebook_app_id">1102488199881087</string>
+
     <string name="fb_login_protocol_scheme">fb286210088520224</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
