@@ -13,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
@@ -41,6 +43,20 @@ public class MainActivity extends AppCompatActivity
 
             NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
             navigationView.setNavigationItemSelectedListener(this);
+
+
+            // Colocando datos de usuario
+            View view = navigationView.getHeaderView(0);
+
+            TextView txvVName = (TextView) view.findViewById(R.id.txv_user_name);
+            txvVName.setText(V.user.getUsername());
+
+            TextView txvMail = (TextView) view.findViewById(R.id.txv_user_mail);
+            txvMail.setText(V.user.getEmail());
+
+            ImageView imvUser = (ImageView) view.findViewById(R.id.imv_user_picture);
+            imvUser.setImageDrawable(V.user.getPicture());
+
         } else {
             startActivity(new Intent(this, LoginActivity.class));
         }

@@ -66,7 +66,7 @@ public class LoginActivity extends AppCompatActivity {
                             try {
                                 name = object.getString("name");
                                 email = object.getString("email");
-                                if (Methods.  isNotNull(object.getString("picture"))) {
+                                if (Methods.isNotNull(object.getString("picture"))) {
                                     JSONObject imagen = new JSONObject(object.getString("picture"));
                                     JSONObject imagen2 = new JSONObject(imagen.getString("data"));
                                     uriPicture = imagen2.getString("url");
@@ -75,7 +75,7 @@ public class LoginActivity extends AppCompatActivity {
                                 Log.i("email", email);
                                 Log.i("uriPicture", uriPicture);
 
-                                V.user = new User();
+                                V.user = new User(email, name, email, uriPicture);
                                 startActivity(new Intent(LoginActivity.this, MainActivity.class));
                             } catch (JSONException e) {
                                 e.printStackTrace();
