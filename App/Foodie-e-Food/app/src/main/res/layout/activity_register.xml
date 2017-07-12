@@ -36,10 +36,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name"
-            android:textColorHint="@color/colorPrimaryDark"
             android:visibility="visible"
-            tools:text="Nombre(s)"/>
+            android:hint="@string/nombre"/>
 
         <EditText
             android:id="@+id/edi_apellidos"
@@ -48,20 +46,18 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name"
             android:visibility="visible"
-            tools:text="Apellidos"/>
+            android:hint="@string/apellido"/>
 
         <EditText
-            android:id="@+id/edi_correo_electronico"
+            android:id="@+id/edi_correo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name"
             android:visibility="visible"
-            tools:text="Correo  electronico"/>
+            android:hint="@string/correo"/>
 
         <EditText
             android:id="@+id/edi_telefono"
@@ -71,7 +67,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:visibility="visible"
-            tools:text="No. telefono"/>
+            android:hint="@string/telefono"/>
 
         <EditText
             android:id="@+id/edi_password"
@@ -81,45 +77,37 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:visibility="visible"
-            tools:text="Constraseña"/>
+            android:hint="@string/contraseña"/>
 
         <EditText
-            android:id="@+id/edi_confirmar_password"
+            android:id="@+id/edi_verificar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
             android:visibility="visible"
-            tools:text="Confirmar constraseña"/>
+            android:hint="@string/verificacion"/>
 
         <TextView
             android:id="@+id/txv_metodo_pago"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            tools:text="Metodo de pago"/>
+            android:text="@string/metodo_pago"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="horizontal">
 
-            <Button
+
+        <Button
                 android:id="@+id/btn_tarjeta"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Button"/>
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Button"/>
-        </LinearLayout>
+                android:background="#F47A14"
+                android:layout_margin="10dp"
+                android:textColor="#fff"
+                android:hint="Registrar"/>
 
     </LinearLayout>
 

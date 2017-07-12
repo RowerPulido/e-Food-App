@@ -1,4 +1,4 @@
-<resources>
+ <resources>
     <string name="app_name">e-Food</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -13,4 +13,13 @@
     <string name="fb_login_protocol_scheme">fb286210088520224</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Register !-->
+     <string name="nombre">Nombre(s)</string>
+     <string name="apellido">Apellidos</string>
+     <string name="correo">Correo electronico</string>
+     <string name="telefono">No. Telefono</string>
+     <string name="contraseña">Constraseña</string>
+     <string name="verificacion">Verificar contraseña</string>
+     <string name="metodo_pago">Metodo de pago</string>
 </resources>
