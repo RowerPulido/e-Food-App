@@ -36,12 +36,27 @@ public class User {
         this.phoneNumber = "";
     }
 
+    /**
+     * Construct the object of @Class User
+     *
+     * @param email
+     * @param username
+     * @param phoneNumber
+     */
     public User(String email, String username, String phoneNumber) {
         this.email = email;
         this.username = username;
         this.phoneNumber = phoneNumber;
     }
 
+    /**
+     * Construct the object of @Class User
+     *
+     * @param email
+     * @param username
+     * @param phoneNumber
+     * @param picture
+     */
     public User(String email, String username, String phoneNumber, Drawable picture) {
         this.email = email;
         this.username = username;
@@ -49,6 +64,14 @@ public class User {
         this.picture = picture;
     }
 
+    /**
+     * Construct the object of @Class User
+     *
+     * @param email
+     * @param username
+     * @param phoneNumber
+     * @param urlImage
+     */
     public User(String email, String username, String phoneNumber, String urlImage) {
         this.email = email;
         this.username = username;

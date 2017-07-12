@@ -1,6 +1,8 @@
 package com.services.sonata.food.e.foodie_e_food.activities;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -35,7 +37,12 @@ public class LoginActivity extends AppCompatActivity {
     private LoginButton btnLoginFb;
     private CallbackManager mFacebookCallbackManager;
 
+    private String USER_MAIL = ".user.email";
+    private String USER_PASSWORD = ".user.password";
+    private String USER_NAME = ".user.name";
+
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
@@ -75,8 +82,11 @@ public class LoginActivity extends AppCompatActivity {
                                 Log.i("email", email);
                                 Log.i("uriPicture", uriPicture);
 
-                                V.user = new User(email, name, email, uriPicture);
-                                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                                SharedPreferences preferences = getSharedPreferences(V.APP_PACKAGE, Context.MODE_PRIVATE);
+                                preferences.edit().putString(V.APP_PACKAGE + USER_MAIL, email).apply();
+                                preferences.edit().putString(V.APP_PACKAGE + USER_NAME, name).apply();
+
+                                goToMainActivity(email, name, email, uriPicture);
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
@@ -107,10 +117,27 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                V.user = new User();
-                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                goToMainActivity();
             }
         });
+    }
+
+    public void goToMainActivity() {
+        V.user = new User();
+        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+    }
+
+    public void goToMainActivity(String email, String name, String phone, String uriPicture) {
+        V.user = new User(email, name, phone, uriPicture);
+        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+    }
+
+    public void hasLogin() {
+        boolean hasSession = false;
+        SharedPreferences preferences = getSharedPreferences(V.APP_PACKAGE, Context.MODE_PRIVATE);
+        if (preferences.getString(V.APP_PACKAGE + USER_MAIL, "") == "" && preferences.getString(V.APP_PACKAGE + USER_PASSWORD, "") == "") {
+            hasSession = true;
+        }
     }
 
     @Override

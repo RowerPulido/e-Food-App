@@ -11,6 +11,7 @@
         android:allowBackup="true"
         android:icon="@drawable/efoodwhite"
         android:label="e-Food"
+        android:largeHeap="true"
         android:roundIcon="@drawable/efood_white"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -36,10 +37,11 @@
             android:name=".activities.RegisterActivity"
             android:label="Registrarse"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-    <!--Facebook Login-->
+        <!--Facebook Login-->
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
+
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ite_inicio"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/ite_ordenes_actuales"
+            android:title="Ordenes Actuales" />
+        <item
+            android:id="@+id/ite_platillos"
+            android:title="Mis Platillos" />
+        <item
+            android:id="@+id/ite_historial"
+            android:title="Historial" />
+        <item
+            android:id="@+id/ite_estadisticas"
+            android:title="Estadisticas" />
+        <item
+            android:id="@+id/ite_cuenta"
+            android:title="Mi Cuenta" />
+    </group>
+
+    <!--<item android:title="Communicate">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_share"-->
+    <!--android:icon="@drawable/ic_menu_share"-->
+    <!--android:title="Share" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_send"-->
+    <!--android:icon="@drawable/ic_menu_send"-->
+    <!--android:title="Send" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+</menu>

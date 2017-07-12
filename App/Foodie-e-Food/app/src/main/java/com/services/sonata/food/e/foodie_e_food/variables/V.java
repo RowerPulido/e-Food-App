@@ -7,6 +7,8 @@ import com.services.sonata.food.e.foodie_e_food.models.User;
  */
 
 public abstract class V {
+    public static String APP_PACKAGE = "com.services.sonata.food.e.foodie_e_food";
+
     public static class URL {
         public static String URL_DOMAIN = "";
     }
