@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity
             imvUser.setImageDrawable(V.user.getPicture());
 
         } else {
+            finish();
             startActivity(new Intent(this, LoginActivity.class));
         }
     }

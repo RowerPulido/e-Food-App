@@ -22,4 +22,13 @@
      <string name="contraseña">Constraseña</string>
      <string name="verificacion">Verificar contraseña</string>
      <string name="metodo_pago">Metodo de pago</string>
+     <string name="tarjeta">No. Tarjeta</string>
+     <string name="expiracion">Fecha de expiración</string>
+     <string name="mes">MM</string>
+     <string name="año">YYYY</string>
+     <string name="direccion">Dirección</string>
+     <string name="codigo_postal">Código postal</string>
+     <string name="codigo_cv">Código CV</string>
+     <string name="registrar">Registrar</string>
+     <string name="datos_personales">Datos personales</string>
 </resources>

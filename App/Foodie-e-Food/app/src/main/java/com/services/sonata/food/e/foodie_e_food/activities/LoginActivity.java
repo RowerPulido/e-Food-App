@@ -34,6 +34,7 @@ import java.util.Arrays;
 public class LoginActivity extends AppCompatActivity {
 
     private Button btnLogin;
+    private Button btnSignup;
     private LoginButton btnLoginFb;
     private CallbackManager mFacebookCallbackManager;
 
@@ -52,6 +53,7 @@ public class LoginActivity extends AppCompatActivity {
     private void init() {
         btnLogin = (Button) findViewById(R.id.btn_login);
         btnLoginFb = (LoginButton) findViewById(R.id.btn_login_fb);
+        btnSignup = (Button) findViewById(R.id.btn_signup);
 
         //Facebook Login
         FacebookSdk.sdkInitialize(getApplicationContext());
@@ -118,6 +120,13 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 goToMainActivity();
+            }
+        });
+        btnSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
             }
         });
     }

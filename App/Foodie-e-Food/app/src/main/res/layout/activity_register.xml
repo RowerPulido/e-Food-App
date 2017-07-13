@@ -1,114 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-              tools:context="com.services.sonata.food.e.foodie_e_food.activities.RegisterActivity">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:padding="0dp">
-
-        <ImageView
-            android:id="@+id/imv_logo_efood"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@drawable/efood_final"
-            android:padding="0dp"/>
 
-    </LinearLayout>
+            android:layout_height="match_parent"
+            tools:context="com.services.sonata.food.e.foodie_e_food.activities.RegisterActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="0dp"
         android:orientation="vertical"
-        android:padding="30dp">
+        >
 
-        <EditText
-            android:id="@+id/edi_nombre"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:visibility="visible"
-            android:hint="@string/nombre"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp">
 
-        <EditText
-            android:id="@+id/edi_apellidos"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:visibility="visible"
-            android:hint="@string/apellido"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/datos_personales"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/edi_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nombre"
+                style="@style/edi_textSize"/>
 
-        <EditText
-            android:id="@+id/edi_correo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:visibility="visible"
-            android:hint="@string/correo"/>
+            <EditText
+                android:id="@+id/edi_apellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/apellido"
+                style="@style/edi_textSize"/>
 
-        <EditText
-            android:id="@+id/edi_telefono"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:visibility="visible"
-            android:hint="@string/telefono"/>
+            <EditText
+                android:id="@+id/edi_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/correo"
+                style="@style/edi_textSize"/>
 
-        <EditText
-            android:id="@+id/edi_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:visibility="visible"
-            android:hint="@string/contraseña"/>
+            <EditText
+                android:id="@+id/edi_telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/telefono"
+                style="@style/edi_textSize"/>
 
-        <EditText
-            android:id="@+id/edi_verificar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:visibility="visible"
-            android:hint="@string/verificacion"/>
+            <EditText
+                android:id="@+id/edi_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/contraseña"
+                style="@style/edi_textSize"/>
 
-        <TextView
-            android:id="@+id/txv_metodo_pago"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/metodo_pago"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/edi_verificar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/verificacion"
+                style="@style/edi_textSize"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/metodo_pago"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edi_tarjeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tarjeta"
+                style="@style/edi_textSize"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/expiracion"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="@string/codigo_cv"
+                    android:textAlignment="textEnd"
+                    android:textSize="15dp"/>
 
 
+                <Button
+                    android:id="@+id/btn_help"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.3"/>
+            </LinearLayout>
 
-        <Button
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edi_mes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/mes"
+                    android:textAlignment="center"
+                    style="@style/edi_textSize"/>
+
+                <EditText
+                    android:id="@+id/edi_año"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:hint="@string/año"
+                    android:textAlignment="center"
+                    style="@style/edi_textSize"/>
+
+                <EditText
+                    android:id="@+id/eid_codigo_cv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    style="@style/edi_textSize"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edi_direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/direccion"
+                style="@style/edi_textSize"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/codigo_postal"
+                style="@style/edi_textSize"/>
+
+            <Button
                 android:id="@+id/btn_tarjeta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#F47A14"
                 android:layout_margin="10dp"
-                android:textColor="#fff"
-                android:hint="Registrar"/>
+                android:background="#F47A14"
+                android:text="@string/registrar"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>
