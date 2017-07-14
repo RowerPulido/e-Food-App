@@ -23,56 +23,56 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="@string/datos_personales"
+                android:text="@string/personal_info"
                 android:textSize="20dp"
                 android:textStyle="bold"/>
             <EditText
                 android:id="@+id/edi_nombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/nombre"
+                android:hint="@string/names"
                 style="@style/edi_textSize"/>
 
             <EditText
                 android:id="@+id/edi_apellidos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/apellido"
+                android:hint="@string/last_names"
                 style="@style/edi_textSize"/>
 
             <EditText
                 android:id="@+id/edi_correo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/correo"
+                android:hint="@string/mail"
                 style="@style/edi_textSize"/>
 
             <EditText
                 android:id="@+id/edi_telefono"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/telefono"
+                android:hint="@string/phone_number"
                 style="@style/edi_textSize"/>
 
             <EditText
                 android:id="@+id/edi_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/contraseña"
+                android:hint="@string/password"
                 style="@style/edi_textSize"/>
 
             <EditText
                 android:id="@+id/edi_verificar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/verificacion"
+                android:hint="@string/repeat_password"
                 style="@style/edi_textSize"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="@string/metodo_pago"
+                android:text="@string/pay_methds"
                 android:textSize="20dp"
                 android:textStyle="bold"/>
 
@@ -80,7 +80,7 @@
                 android:id="@+id/edi_tarjeta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/tarjeta"
+                android:hint="@string/card_number"
                 style="@style/edi_textSize"/>
 
             <LinearLayout
@@ -91,14 +91,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="@string/expiracion"
+                    android:text="@string/expiration"
                     android:textSize="15dp"/>
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.2"
-                    android:text="@string/codigo_cv"
+                    android:text="@string/cv_code"
                     android:textAlignment="textEnd"
                     android:textSize="15dp"/>
 
@@ -120,7 +120,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:hint="@string/mes"
+                    android:hint="@string/month"
                     android:textAlignment="center"
                     style="@style/edi_textSize"/>
 
@@ -130,7 +130,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
-                    android:hint="@string/año"
+                    android:hint="@string/year"
                     android:textAlignment="center"
                     style="@style/edi_textSize"/>
 
@@ -146,13 +146,13 @@
                 android:id="@+id/edi_direccion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/direccion"
+                android:hint="@string/address"
                 style="@style/edi_textSize"/>
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/codigo_postal"
+                android:hint="@string/zip_code"
                 style="@style/edi_textSize"/>
 
             <Button
@@ -161,7 +161,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:background="#F47A14"
-                android:text="@string/registrar"
+                android:text="@string/register"
                 android:textColor="#fff"/>
 
         </LinearLayout>

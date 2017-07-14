@@ -1,4 +1,4 @@
- <resources>
+<resources>
     <string name="app_name">e-Food</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -15,20 +15,20 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- Register !-->
-     <string name="nombre">Nombre(s)</string>
-     <string name="apellido">Apellidos</string>
-     <string name="correo">Correo electronico</string>
-     <string name="telefono">No. Telefono</string>
-     <string name="contraseña">Constraseña</string>
-     <string name="verificacion">Verificar contraseña</string>
-     <string name="metodo_pago">Metodo de pago</string>
-     <string name="tarjeta">No. Tarjeta</string>
-     <string name="expiracion">Fecha de expiración</string>
-     <string name="mes">MM</string>
-     <string name="año">YYYY</string>
-     <string name="direccion">Dirección</string>
-     <string name="codigo_postal">Código postal</string>
-     <string name="codigo_cv">Código CV</string>
-     <string name="registrar">Registrar</string>
-     <string name="datos_personales">Datos personales</string>
+    <string name="names">Nombre(s)</string>
+    <string name="last_names">Apellidos</string>
+    <string name="mail">Correo electronico</string>
+    <string name="phone_number">No. Telefono</string>
+    <string name="password">Constraseña</string>
+    <string name="repeat_password">Verificar contraseña</string>
+    <string name="pay_methds">Metodo de pago</string>
+    <string name="card_number">No. Tarjeta</string>
+    <string name="expiration">Fecha de expiración</string>
+    <string name="month">MM</string>
+    <string name="year">YYYY</string>
+    <string name="address">Dirección</string>
+    <string name="zip_code">Código postal</string>
+    <string name="cv_code">Código CV</string>
+    <string name="register">Registrar</string>
+    <string name="personal_info">Datos personales</string>
 </resources>

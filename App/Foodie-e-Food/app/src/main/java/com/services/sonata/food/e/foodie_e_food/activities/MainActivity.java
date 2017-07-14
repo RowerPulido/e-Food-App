@@ -1,9 +1,8 @@
 package com.services.sonata.food.e.foodie_e_food.activities;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,6 +23,10 @@ import com.services.sonata.food.e.foodie_e_food.variables.V;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    Toolbar mToolbar;
+    DrawerLayout mDrawer;
+    NavigationView mNavigationView;
+    FrameLayout mContainer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,21 +36,21 @@ public class MainActivity extends AppCompatActivity
         AppEventsLogger.activateApp(this);
 
         if (V.user != null) {
-            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-            setSupportActionBar(toolbar);
-
-            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+            mToolbar = (Toolbar) findViewById(R.id.toolbar);
+            setSupportActionBar(mToolbar);
+            getSupportActionBar().setDisplayOptions(0, ActionBar.DISPLAY_SHOW_TITLE);
+            mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                    this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-            drawer.setDrawerListener(toggle);
+                    this, mDrawer, mToolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+            mDrawer.setDrawerListener(toggle);
             toggle.syncState();
 
-            NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-            navigationView.setNavigationItemSelectedListener(this);
+            mNavigationView = (NavigationView) findViewById(R.id.nav_view);
+            mNavigationView.setNavigationItemSelectedListener(this);
 
 
             // Colocando datos de usuario
-            View view = navigationView.getHeaderView(0);
+            View view = mNavigationView.getHeaderView(0);
 
             TextView txvVName = (TextView) view.findViewById(R.id.txv_user_name);
             txvVName.setText(V.user.getUsername());
@@ -57,10 +61,16 @@ public class MainActivity extends AppCompatActivity
             ImageView imvUser = (ImageView) view.findViewById(R.id.imv_user_picture);
             imvUser.setImageDrawable(V.user.getPicture());
 
+            init();
         } else {
             finish();
             startActivity(new Intent(this, LoginActivity.class));
         }
+    }
+
+    private void init() {
+        mContainer = (FrameLayout) findViewById(R.id.frm_container);
+
     }
 
     @Override
@@ -84,28 +94,24 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
+        switch (item.getItemId()) {
+            case R.id.ite_buscar_comida:
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+                break;
+            case R.id.ite_en_curso:
+                break;
+            case R.id.ite_historial:
+                break;
+            case R.id.ite_carrito_compras:
+                break;
+            case R.id.ite_promociones:
+                break;
+            case R.id.ite_cuenta:
+                break;
         }
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
+        mDrawer.closeDrawer(GravityCompat.START);
         return true;
     }
 }
