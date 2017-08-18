@@ -17,4 +17,4 @@ En la carpeta de [**Docs**](https://github.com/RowerPulido/e-Food-App/tree/maste
 ### Correo Electronico
 [Jorge Pulido](mailto:jorgepulidotrujillo@gmail.com)
 
-**  TODOS LOS DERECHOS DE ESTE SISTEMA PERTENECEN A SONATA SERVICES **
+**TODOS LOS DERECHOS DE ESTE SISTEMA PERTENECEN A SONATA SERVICES**
