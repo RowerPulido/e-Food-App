@@ -12,7 +12,7 @@ En la carpeta [**Mockups**](https://github.com/RowerPulido/e-Food-App/tree/maste
 En la carpeta de [**Docs**](https://github.com/RowerPulido/e-Food-App/tree/master/Docs) se encuentra los documentos necesarios para el desarrollo de las aplicaciones. 
 
 ## [Link de invitacion](https://github.com/RowerPulido/e-Food-App/invitations)
-**Si el link no funciona, enviarme un correo para cualquier duda**
+**Si el link no funciona, enviarme un correo con su usuario de [GitHub](https://github.com) o Correo Electronico**
 
 ### Correo Electronico
 [Jorge Pulido](mailto:jorgepulidotrujillo@gmail.com)
