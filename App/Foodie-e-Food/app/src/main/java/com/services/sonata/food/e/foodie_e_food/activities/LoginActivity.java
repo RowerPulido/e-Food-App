@@ -67,11 +67,16 @@ public class LoginActivity extends AppCompatActivity {
                 GraphRequest request = GraphRequest.newMeRequest(loginResult.getAccessToken(), new GraphRequest.GraphJSONObjectCallback() {
                     @Override
                     public void onCompleted(JSONObject object, GraphResponse response) {
-                        String name = "";
-                        String email = "";
+                        String name;
+                        String email;
                         String uriPicture = "";
+                        String gender;
+                        String birthday;
+                        int age;
+
 
                         if (Methods.isNotNull(object)) {
+                            Log.i("response", object.toString());
                             try {
                                 name = object.getString("name");
                                 email = object.getString("email");
@@ -80,10 +85,12 @@ public class LoginActivity extends AppCompatActivity {
                                     JSONObject imagen2 = new JSONObject(imagen.getString("data"));
                                     uriPicture = imagen2.getString("url");
                                 }
+
+                                Log.i("sep", "---------------------------------------------------------");
                                 Log.i("name", name);
                                 Log.i("email", email);
                                 Log.i("uriPicture", uriPicture);
-
+                                Log.i("sep", "---------------------------------------------------------");
                                 SharedPreferences preferences = getSharedPreferences(V.APP_PACKAGE, Context.MODE_PRIVATE);
                                 preferences.edit().putString(V.APP_PACKAGE + USER_MAIL, email).apply();
                                 preferences.edit().putString(V.APP_PACKAGE + USER_NAME, name).apply();
@@ -126,7 +133,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
+                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
             }
         });
     }

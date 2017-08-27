@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ite_search_food"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Buscar Comida" />
+
+    <item android:title="Pedidos">
+        <menu>
+            <item
+                android:id="@+id/ite_on_course"
+                android:icon="@mipmap/ic_launcher"
+                android:title="En Curso" />
+            <item
+                android:id="@+id/ite_historical"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Historial" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/ite_shopping_cart"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Carrito" />
+    <item
+        android:id="@+id/ite_promos"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Promociones" />
+    <item
+        android:id="@+id/ite_account"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Mi Cuenta" />
+</menu>

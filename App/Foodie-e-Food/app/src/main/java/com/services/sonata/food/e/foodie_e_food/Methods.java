@@ -39,7 +39,7 @@ public abstract class Methods {
         Drawable d = null;
         try {
             InputStream data = (InputStream) new URL(imageURL).getContent();
-            d = Drawable.createFromStream(data, "");
+            d = Drawable.createFromStream(data, imageURL);
         } catch (Exception e) {
             e.printStackTrace();
         }
